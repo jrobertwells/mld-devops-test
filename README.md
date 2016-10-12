@@ -11,6 +11,7 @@ To build the project:
 * Clone the project with ```git clone https://github.com/MyLifeDigital/mld-devops-test.git```.
 * Build the project using gradle: ```<project path>/gradlew clean build``` or ```<project path>/gradlew.bat clean build``` if on windows.
 * The jar will now be located in: ```<project path>/build/lib```
+* to start the jar from the command line: ```java -jar notes-1.0-SNAPSHOT.jar```
 
 The 'notes' project requires CouchDB to run, it will attempt connect to ```http://couchdb:5984/``` without a username/password (CouchDB starts with no authentication enabled). It will create the required database if it does not exist. It is best to initially run against a clean CouchDB.
 

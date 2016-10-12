@@ -1,6 +1,7 @@
 package com.mld.service;
 
 import com.mld.api.dto.NoteDTO;
+import org.ektorp.DocumentNotFoundException;
 import org.slf4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
@@ -25,10 +26,16 @@ public class NoteService {
     }
 
     public NoteDTO getNote(String id){
-        final Note note = notePersistenceHandler.get(id);
-        if (note == null){
+
+        Note note = null;
+
+        try {
+            note = notePersistenceHandler.get(id);
+        }catch (DocumentNotFoundException dnfe){
+            log.warn("Cannot find note with id : " + id);
             throw new NotFoundException("Cannot find note with id : " + id);
         }
+
         log.info("Found note with id: " + note.getId() + " with details: " + note.getDetails());
         return convertNoteToDTO(note);
     }
