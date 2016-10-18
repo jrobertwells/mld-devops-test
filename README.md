@@ -22,7 +22,7 @@ Upon starting the application (which requires an available database) you can nav
 The 'notes' application will provide basic logging while running to help you solve any problems you may encounter.
 
 ###The task
-We would like see the 'notes' application running in a docker container, along with CouchDB as its backend, with a solution provided to enable us to start and run the 'notes' application with CouchDB on our machine. Please provide any supporting documentation.
+We would like see a scripted solution to run the 'notes' application using docker with CouchDB as its backend, the solution provided should enable us to start and run the 'notes' application along with CouchDB on our machine. Please provide any supporting documentation.
 
 We will check the files/solutions provided, and if this meets the required standard you'll be invited to an interview. We may then discuss your solution in more detail.
 
