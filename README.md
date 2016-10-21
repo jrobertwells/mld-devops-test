@@ -1,7 +1,7 @@
 # MLD DEV-OPS CONTAINER TASK
 ### Introduction
 
-The task is to run a java application that is dependent on CouchDB database via containers. 
+The task is to run a java application that is dependent on a CouchDB database via containers. 
 We have prepared a project called 'notes' that can save and retrieve notes from a database. 
 
 The java project provides a Rest API frontend to test against.
