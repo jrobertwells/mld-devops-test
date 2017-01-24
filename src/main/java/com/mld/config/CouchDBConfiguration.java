@@ -22,13 +22,13 @@ public class CouchDBConfiguration {
     private static final Logger log = getLogger(CouchDBConfiguration.class);
 
 
-    @Value("${couchdb.host}")
+    @Value("${mld.couchdb.host}")
     private String host;
 
-    @Value("${couchdb.port}")
+    @Value("${mld.couchdb.port}")
     private String port;
 
-    @Value("${couchdb.database}")
+    @Value("${mld.couchdb.database}")
     private String database;
 
     @Bean
