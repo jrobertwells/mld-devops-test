@@ -19,10 +19,12 @@ CouchDB ```http://couchdb.apache.org/``` is a simple to run NOSQL database, furt
 
 Upon starting the application (which requires an available database) you can navigate to ```http://<machineip>:8080/swagger-ui.html``` to see a detailed description of the API using Swagger.
 
+To test, in the 'POST' section type in a string (anything) and press try, you should see a 200 and a GUID/ID as the response. Take the GUID and paste into the 'GET' section to retrive the details.
+
 The 'notes' application will provide basic logging while running to help you solve any problems you may encounter.
 
-###The task
-We would like see a scripted solution to run the 'notes' application using docker with CouchDB as its backend, the solution provided should enable us to start and run the 'notes' application along with CouchDB on our machine. Please provide any supporting documentation.
+### The task
+We would like see a solution to run the 'notes' application using docker with CouchDB as its backend, the solution provided should enable us to run the 'notes' application as a container along with CouchDB on our machine. Please provide any supporting documentation.
 
 We will check the files/solutions provided, and if this meets the required standard you'll be invited to an interview. We may then discuss your solution in more detail. Solutions can be provided as a git repo, a zip or any other means.
 
