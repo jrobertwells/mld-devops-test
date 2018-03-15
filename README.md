@@ -1,4 +1,4 @@
-# MLD DEV-OPS CONTAINER TASK
+# MLD DEV/INFRA-OPS CONTAINER TASK
 ### Introduction
 
 The task is to run a java application that is dependent on a CouchDB database via containers. 
@@ -25,6 +25,9 @@ The 'notes' application will provide basic logging while running to help you sol
 
 ### The task
 We would like see a solution to run the 'notes' application using docker with CouchDB as its backend, the solution provided should enable us to run the 'notes' application as a container along with CouchDB on our machine. Please provide any supporting documentation.
+
+If you go and look at ```https://docs.docker.com/install/linux/docker-ee/ubuntu/``` for Linux or ```https://docs.docker.com/docker-for-windows/install/``` for Windows
+Google around on how to 'build a container in docker' and I would suggest pushing to dockerhub as the repo.
 
 We will check the files/solutions provided, and if this meets the required standard you'll be invited to an interview. We may then discuss your solution in more detail. Solutions can be provided as a git repo, a zip or any other means.
 
