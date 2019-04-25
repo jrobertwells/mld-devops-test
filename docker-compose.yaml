@@ -1,0 +1,16 @@
+version: '3'
+services:
+  couchdb:
+    image: "couchdb"
+    ports:
+        - "5984:5984"
+    networks:
+      - app-net
+  java:
+    build: .
+ports:
+        - "8080:8080"
+    networks:
+      - app-net
+networks:
+  app-net:
